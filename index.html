@@ -23,7 +23,7 @@
             </div>
             <ul class="steps-list">
                 <li class="steps-item"
-                    v-for="(step, idx) in steps"
+                    v-for="(step, idx) in steps" :key="step"
                     :class="[{'active' : idx === activeIndex}, {'done' : idx < activeIndex} ]"
                 >
                     <span @click="setActive(idx)">{{idx + 1}}</span>{{step.title}}
