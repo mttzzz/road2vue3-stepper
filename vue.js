@@ -59,9 +59,6 @@ const App = {
     },
     isLastStep() {
       return this.activeIndex === this.steps.length - 1
-    },
-    nextOfFinishButtonTitle() {
-      return this.isLastStep ? 'Закончить' : 'Вперед'
     }
   }
 }
